@@ -12,7 +12,7 @@ import {
 import { io, Socket } from "socket.io-client";
 import api from "../services/api";
 
-const socket: Socket = io("http://localhost:3000");
+const socket: Socket = io(import.meta.env.VITE_SOCKET_URL);
 
 interface Profile {
   id: number;

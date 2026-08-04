@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import api from "../services/api";
 
-const socket: Socket = io("http://localhost:3000");
+const socket: Socket = io(import.meta.env.VITE_SOCKET_URL);
 
 interface User {
   id: number;
